@@ -2,7 +2,7 @@
 //total percorrida pelo automóvel e o total de combustível gasto;
 
 
-package java_ex;
+package java_exercices;
 
 public class Ex3 {
 	
