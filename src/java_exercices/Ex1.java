@@ -1,3 +1,5 @@
+//Faça um algoritmo que receba dois números e exiba o resultado da sua soma;
+
 package java_exercices;
 import java.util.Scanner;
 

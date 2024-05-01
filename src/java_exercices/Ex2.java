@@ -1,3 +1,7 @@
+//Faça um algoritmo que receba dois números e ao final mostre a soma, subtração, multiplicação e a divisão
+//dos dois números lidos;
+
+
 package java_exercices;
 
 import java.util.Scanner;
