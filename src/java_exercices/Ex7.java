@@ -1,9 +1,6 @@
 //Leia uma temperatura em graus Celsius e apresentá-la convertida em graus Fahrenheit. Afórmula de
 //conversão é:F=(9*C+160) / 5, sendo F a temperatura em Fahrenheit e C a temperatura emCelsius;
 
-//input: celsius_temp
-//processing: converterCelsiusToFahranheit()
-//output: fahrenheit_temp
 
 package java_exercices;
 import java.util.Scanner;
