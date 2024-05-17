@@ -14,7 +14,7 @@ public class Ex30 {
 		
 		Scanner scanner = new Scanner(System.in);
 		ArrayList<Integer> arr = new ArrayList<>();
-		final int QTD_NUM = 5;
+		final int QTD_NUM = 3;
 
 		int numero;
 		
