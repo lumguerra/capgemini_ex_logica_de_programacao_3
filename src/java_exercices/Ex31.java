@@ -43,6 +43,9 @@ public class Ex31 {
 		String C = "none";
 		char resposta = 'N';
 		boolean resposta_valida = true;
+		
+		
+		//template
 
 		do {
 
