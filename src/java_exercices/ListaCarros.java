@@ -37,6 +37,15 @@ public class ListaCarros {
 		for(String carro : ListaCarros) {
 			System.out.println(carro);
 		}
+		
+		arrayString = JOptionPane.showInputDialog("Digite o nome do carro que deseja obter o index do array: ");
+		for(int i = 0; i < ListaCarros.size(); ++i) {
+			if(arrayString.equals(ListaCarros.get(i))) {
+				System.out.println("numero do index: " + i );
+				break;
+			}
+		}
+		
 	}
 
 }
