@@ -28,6 +28,7 @@ public class ExLinkedList {
 		System.out.println(num);
 		System.out.println("Último número: ");
 		num = listaNum.getLast();
+		System.out.println(num);
 	}
 
 }
