@@ -14,7 +14,7 @@ public class Dao {
 	protected ResultSet rs;
 	protected CallableStatement call;
 
-	void open() throws Exception{			
+	void open() throws Exception {
 		String url = "jdbc:mysql://localhost:3306/cadastros";
 		String user = "root";
 		String password = "Lg024135";
@@ -22,13 +22,12 @@ public class Dao {
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			con = DriverManager.getConnection(url, user, password);
-			System.out.println("conectado");
-		}catch (SQLException | ClassNotFoundException ex) {
+		} catch (SQLException | ClassNotFoundException ex) {
 			System.out.println("Erro ao conectar com o banco");
 		}
 	}
-	
-	void close() throws Exception{
+
+	void close() throws Exception {
 		con.close();
 	}
 
