@@ -27,6 +27,8 @@ public class Menu {
 		for(Pessoa pessoas : pessoasList) {
 			System.out.println(pessoas);
 		}
+		
+		
 	}
 
 }
