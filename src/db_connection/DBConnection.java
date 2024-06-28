@@ -11,7 +11,7 @@ import java.io.IOException;
 
 public class DBConnection {
 	
-	private Connection con;
+	Connection con;
 	PreparedStatement stm;
 	ResultSet rs;
 	CallableStatement cstm;
@@ -19,7 +19,7 @@ public class DBConnection {
 	private String filepath = "src/db_connection/password.txt";
 	private String password;
 	private String userName = "root";
-	private String url = "jdbc:mysql:localhost:3306/beeings";
+	private String url = "jdbc:mysql://localhost:3306/beeings";
 	
 	void openConnection(){		
 		//get password from file
@@ -27,8 +27,8 @@ public class DBConnection {
             String password = new String(Files.readAllBytes(Paths.get(this.filepath))); 
             this.password = password;
         } catch (IOException e) {
-            e.printStackTrace();
             System.out.println("Password file missing or incorrect file path");
+            e.printStackTrace();
         }
 		//connect
 		try {
@@ -36,6 +36,7 @@ public class DBConnection {
 			this.con = DriverManager.getConnection(this.url, this.userName, this.password);
 		}catch(ClassNotFoundException | SQLException e) {
 			System.out.println("Falha na conexão com banco de dados.");
+			e.printStackTrace();
 		}		
 	}	
 	
